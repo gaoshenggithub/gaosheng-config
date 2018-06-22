@@ -1,3 +1,4 @@
+
 spring: 
   profiles:
     active:
@@ -12,7 +13,7 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloudDB03
+    url: jdbc:mysql://localhost:3306/clouddb01
     username: root
     password: 123456
     dbcp2:
@@ -22,12 +23,12 @@ spring:
       max-wait-millis: 200 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  type-aliases-package: com.gaosheng.springcloud.entity
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
  
 eureka: 
-  client: #¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÄÚ
+  client: #å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨å†…
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka
   instance:
@@ -49,7 +50,7 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloudDB02
+    url: jdbc:mysql://localhost:3306/clouddb02
     username: root
     password: 123456
     dbcp2:
@@ -61,12 +62,12 @@ spring:
   
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  type-aliases-package: com.gaosheng.springcloud.entity
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
  
 eureka: 
-  client: #¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÄÚ
+  client: #å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨å†…
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka
   instance:
